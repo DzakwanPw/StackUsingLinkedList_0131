@@ -28,4 +28,15 @@ public:
     {
         top = NULL; //
     }
+
+    //
+    int push(int value)
+    {
+        Node *newNode = new Node(); // 1. Allocate memory
+        newNode->data = value;      // 2. 
+        newNode->next = top;        // 3.
+        top = newNode;              // 4.
+        cout << *Push value: * << value << endl;
+        return value;
+    }
 }
