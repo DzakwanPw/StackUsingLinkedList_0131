@@ -29,7 +29,7 @@ public:
         top = NULL; // initialize the stack with = null top pointer
     }
 
-    //
+    // Push operation: Insert as element into the top of the stack
     int push(int value)
     {
         Node *newNode = new Node(); // 1. Allocate memory
@@ -42,7 +42,7 @@ public:
     // IsEmpty operation: check if the stack is Empty
     bool isEmpty()
     {
-        return top == NULL; // rteurn true if the top pointer is NULL
+        return top == NULL; // return true if the top pointer is NULL
     }
 
     // Pop operation: remove the tempost element from the stack
