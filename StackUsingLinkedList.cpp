@@ -33,10 +33,18 @@ public:
     int push(int value)
     {
         Node *newNode = new Node(); // 1. Allocate memory
-        newNode->data = value;      // 2. 
-        newNode->next = top;        // 3.
-        top = newNode;              // 4.
-        cout << *Push value: * << value << endl;
+        newNode->data = value;      // 2. Allign Value
+        newNode->next = top;        // 3. Set the next pointer
+        top = newNode;              // 4. Update the top pointer
+        cout << "push value: " << value << endl;
         return value;
     }
+    //
+    bool isEmpty()
+    {
+        return top == NULL; // rteurn true if the top pointer is NULL
+    }
+
+    // Pop operation: remove the tempost element from the stack
+    void pop()
 }
