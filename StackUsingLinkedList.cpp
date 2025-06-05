@@ -5,13 +5,13 @@ using namespace std;
 //
 
 //
-class Mode
+class Node
 {
 public:
     int data;
-    Mode *next;
+    Node *next;
 
-    Mode()
+    Node()
     {
         next = NULL;
     }
@@ -20,5 +20,12 @@ public:
 //
 class stack
 {
-    
+private:
+    Node *top; //
+
+public:
+    stack()
+    {
+        top = NULL; //
+    }
 }
