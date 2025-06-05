@@ -51,13 +51,13 @@ public:
         if (isEmpty())
         {
             cout << "Stack is empty." << endl;
-            return; // If
+            return; // If the stack is empty, print a message and 
         }
         cout << "Popped value: " << top->data << endl;
         top = top->next; // Update the top pointer to the next node
     }
 
-    // Peek/Top operation: retrieve the value of the top
+    // Peek/Top operation: retrieve the value of the topmost element without removing 1%
     void peek()
     {
         if(isEmpty())
