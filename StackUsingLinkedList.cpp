@@ -39,7 +39,7 @@ public:
         cout << "push value: " << value << endl;
         return value;
     }
-    //
+    // IsEmpty operation: check if the stack is Empty
     bool isEmpty()
     {
         return top == NULL; // rteurn true if the top pointer is NULL
@@ -59,4 +59,20 @@ public:
 
     // Peek/Top operation: retrieve the value of the top
     void peek()
+    {
+        if(isEmpty())
+        {
+            cout << "List is empty," << endl;
+            return; //
+        }
+        else{
+            Node *cureeent = top;
+            while (current !=NULL)
+            {
+                cout << current->data << " " << endl;
+                current = current->next;
+            }
+            cout << endl;
+        }
+    }
 }
