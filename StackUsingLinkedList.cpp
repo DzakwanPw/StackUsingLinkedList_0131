@@ -26,7 +26,7 @@ private:
 public:
     stack()
     {
-        top = NULL; //
+        top = NULL; // initialize the stack with = null top pointer
     }
 
     //
