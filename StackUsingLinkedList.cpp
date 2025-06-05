@@ -100,6 +100,20 @@ int main()
             cout << "Enter the value to push: ";
             cin >> value;
             stack.push(value); // push the entered value
+            break;
+        case 2:
+            stack.pop(); // Pop the temposit element from the stack
+            break;
+        case 3:
+            stack.peek();
+            break;
+
+        case 4:
+            cout << "Exiting program." << endl;
+            break;
+        default:
+            cout << "Invalid choice. Try again." << endl;
+            break;
         }
     }
 }
