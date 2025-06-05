@@ -2,7 +2,9 @@
 using namespace std;
 
 // stackUsingLinkedlist_4nimbelakang
+// minimal commit 20
 
+// Node class representing = single node in the linked list
 class Node
 {
 public:
