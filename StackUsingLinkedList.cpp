@@ -65,8 +65,9 @@ public:
             cout << "List is empty," << endl;
             return; //
         }
-        else{
-            Node *cureeent = top;
+        else
+        {
+            Node *current = top;
             while (current !=NULL)
             {
                 cout << current->data << " " << endl;
